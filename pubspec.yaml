@@ -64,6 +64,10 @@ flutter:
     - assets/fire.png
     - assets/notification.png
     - assets/profileImage.png
+    - assets/bookAndPen.png
+    - assets/notebook.png
+    - assets/pen.png
+    - assets/lightbulb.png
 
 
   # An image asset can refer to one or more resolution-specific "variants", see
