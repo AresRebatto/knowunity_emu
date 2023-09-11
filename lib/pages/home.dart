@@ -323,53 +323,67 @@ class HomePage extends StatelessWidget{
                   Align
                   (
                     alignment: Alignment.topLeft,
-                    child: Container(
-                      margin: const EdgeInsets.only(left: 20.0, top: 17.0),
-                      child: const Row(
-                          children: [
-                          Icon(
-                            Icons.history,
-                            color: Colors.white,
-                          ),
-                            Text(
-                              "  Torna sui tuoi passi ",
-                              style: TextStyle(
-                                color: Colors.white,
-                                fontSize: 15,
-                              ),
-                            ),
-                            Icon(
-                              Icons.arrow_forward_ios,
-                              color: Colors.white,
-                            )
-                        ],
-                      )
-                    )
-                  ),
-                  //Appunti. DA FIXARE
-                  Align(
-                    child: Row(
+                    child: Stack
+                    (
                       children: [
                         Container(
-                          alignment: Alignment.centerLeft,
-                          height: 110,
-                          child: Image.asset("assets/appuntoUno.png")
+                          margin: const EdgeInsets.only(left: 20.0, top: 17.0),
+                            child: const Row(
+                            children: [
+                              Icon(
+                                Icons.history,
+                                color: Colors.white,
+                              ),
+                              Text(
+                                "  Torna sui tuoi passi ",
+                                style: TextStyle(
+                                  color: Colors.white,
+                                  fontSize: 15,
+                                ),
+                              ),
+                              Icon(
+                                Icons.arrow_forward_ios,
+                                color: Colors.white,
+                              )
+                            ],
+                          )
                         ),
+                        //Appunti di sezione torna sui tuoi passi
                         Container(
-                            height: 110,
-                            child: Image.asset("assets/appuntoDue.png"),
-                        ),
-                        Container()
-                      ],
+                        margin: const EdgeInsets.only(top: 57.0, left: 17),
+                          child: Row(
+                            children: <Widget>[
+                              Container(
+                                height: 100,
+                                margin: const EdgeInsets.only(right: 15.0),
+                                child: Image.asset("assets/appuntoUno.png")
+                              ),
+                              Container(
+                                height: 100,
+                                margin: const EdgeInsets.only(right: 15.0),
+                                child: Image.asset("assets/appuntoDue.png")
+                              ),
+                              SizedBox(
+                                height: 100,
+                                child: Image.asset("assets/appuntoTre.png")
+                              ),
+                            ]
+                          )
+                        )
+                      ]
                     )
                   )
                 ]
               ),
             ),
             //Sezione gruppi
-            Column(
-
-            ),
+            Container(
+              height: 300,
+              margin: const EdgeInsets.only(right: 15, left: 15, top: 25),
+              decoration: BoxDecoration(
+                color: const Color(0xff272c30),
+                borderRadius: BorderRadius.circular(40),
+              ),)
           ],
         ),
       ),
