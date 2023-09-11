@@ -309,6 +309,45 @@ class HomePage extends StatelessWidget{
                   ],
                 ),
               ],
+            ),
+            Container(
+              decoration: BoxDecoration(
+                color: const Color(0xff272c30),
+                borderRadius: BorderRadius.circular(40),
+              ),
+              width: 20,
+              height: 160,
+              margin: const EdgeInsets.only(right: 15, left: 15, top: 25),
+              child: Row(
+                children: <Widget> [
+                  Align
+                  (
+                    alignment: Alignment.topLeft,
+                    child: Container(
+                      margin: const EdgeInsets.only(left: 20.0, top: 17.0),
+                      child: const Row(
+                          children: [
+                          Icon(
+                            Icons.history,
+                            color: Colors.white,
+                          ),
+                            Text(
+                              "  Torna sui tuoi passi ",
+                              style: TextStyle(
+                                color: Colors.white,
+                                fontSize: 15,
+                              ),
+                            ),
+                            Icon(
+                              Icons.arrow_forward_ios,
+                              color: Colors.white,
+                            )
+                        ],
+                      )
+                    )
+                  )
+                ]
+              ),
             )
           ],
         ),
