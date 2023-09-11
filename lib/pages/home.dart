@@ -310,13 +310,13 @@ class HomePage extends StatelessWidget{
                 ),
               ],
             ),
+            //Sezione Torna sui tuoi passi
             Container(
               decoration: BoxDecoration(
                 color: const Color(0xff272c30),
                 borderRadius: BorderRadius.circular(40),
               ),
-              width: 20,
-              height: 160,
+              height: 190,
               margin: const EdgeInsets.only(right: 15, left: 15, top: 25),
               child: Row(
                 children: <Widget> [
@@ -345,12 +345,62 @@ class HomePage extends StatelessWidget{
                         ],
                       )
                     )
+                  ),
+                  //Appunti. DA FIXARE
+                  Align(
+                    child: Row(
+                      children: [
+                        Container(
+                          alignment: Alignment.centerLeft,
+                          height: 110,
+                          child: Image.asset("assets/appuntoUno.png")
+                        ),
+                        Container(
+                            height: 110,
+                            child: Image.asset("assets/appuntoDue.png"),
+                        ),
+                        Container()
+                      ],
+                    )
                   )
                 ]
               ),
-            )
+            ),
+            //Sezione gruppi
+            Column(
+
+            ),
           ],
         ),
+      ),
+
+      bottomNavigationBar: BottomNavigationBar(
+
+        type: BottomNavigationBarType.fixed,
+        backgroundColor: const Color(0xff080c0f),
+          unselectedItemColor: Colors.white,
+        items: const [
+          BottomNavigationBarItem(
+            icon: Icon(Icons.home),
+            label: 'Home',
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.search),
+            label: 'Per te',
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.add_box_outlined),
+            label: 'Crea',
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.chat_bubble_outline),
+            label: 'Chat',
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.bookmark_border),
+            label: 'Libreria',
+          ),
+        ],
       ),
     );
   }
