@@ -335,14 +335,76 @@ class HomePage extends StatelessWidget {
                       )
                     ]),
                   ),
+                  //Gruppo 1
                   Row(children: <Widget>[
                     Container(
-                      margin: EdgeInsets.only(left: 20, top: 20),
+                      margin:
+                          const EdgeInsets.only(left: 20, top: 20, right: 10.0),
                       height: 50,
                       child: Image.asset("assets/Bosco.png"),
                     ),
-                    Column(children: <Widget>[Text("wdf"), Text("wfer")]),
-                    TextButton(onPressed: () {}, child: Text("Unisciti"))
+                    const Text(" I notturni 2.0 \n GRUPPO UFFICIALE",
+                        style: TextStyle(
+                          color: Colors.white,
+                        )),
+                    Container(
+                        height: 35.0,
+                        decoration: BoxDecoration(
+                            borderRadius: BorderRadius.circular(25.0),
+                            border: Border.all(
+                              color: Colors.blue,
+                            )),
+                        margin: const EdgeInsets.only(left: 74.0),
+                        child: TextButton(
+                            onPressed: () {}, child: const Text("Unisciti")))
+                  ]),
+                  //Gruppo 2
+                  Row(children: <Widget>[
+                    Container(
+                      margin:
+                          const EdgeInsets.only(left: 20, top: 20, right: 13.0),
+                      height: 50,
+                      child: Image.asset("assets/PicGroups1.png"),
+                    ),
+                    const Text(
+                        " LICEO SCIENTIFICO \n Ragazzi ho pensato che siam...",
+                        style: TextStyle(
+                          color: Colors.white,
+                        )),
+                    Container(
+                        height: 35.0,
+                        decoration: BoxDecoration(
+                            borderRadius: BorderRadius.circular(25.0),
+                            border: Border.all(
+                              color: Colors.blue,
+                            )),
+                        margin: const EdgeInsets.only(left: 10.0),
+                        child: TextButton(
+                            onPressed: () {}, child: const Text("Unisciti")))
+                  ]),
+                  //Gruppo 3
+                  Row(children: <Widget>[
+                    Container(
+                      margin:
+                          const EdgeInsets.only(left: 20, top: 20, right: 13.0),
+                      height: 50,
+                      child: Image.asset("assets/PicGroups2.png"),
+                    ),
+                    const Text(
+                        " Studiamo Insieme \n Chiacchieriamo e studiamo...    ",
+                        style: TextStyle(
+                          color: Colors.white,
+                        )),
+                    Container(
+                        height: 35.0,
+                        decoration: BoxDecoration(
+                            borderRadius: BorderRadius.circular(25.0),
+                            border: Border.all(
+                              color: Colors.blue,
+                            )),
+                        margin: const EdgeInsets.only(left: 10.0),
+                        child: TextButton(
+                            onPressed: () {}, child: const Text("Unisciti")))
                   ]),
                 ])),
           ],
