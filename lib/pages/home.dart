@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:knowunity_emu/Colors.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({super.key});
@@ -30,10 +31,10 @@ class HomePage extends StatelessWidget {
                       margin: const EdgeInsets.only(right: 10.0),
                       child: Image.asset("assets/helloHand.png"),
                     ),
-                    const Text(
+                    Text(
                       "Hey",
                       style: TextStyle(
-                          color: Colors.white,
+                          color: Colori.text,
                           fontSize: 20.0,
                           fontFamily: 'HindVadodara'),
                     )
@@ -86,12 +87,12 @@ class HomePage extends StatelessWidget {
                   filled: true,
                   fillColor: const Color(0xff272c30),
                   hintText: "Prossima verifica?",
-                  hintStyle: const TextStyle(
-                    color: Colors.white,
+                  hintStyle: TextStyle(
+                    color: Colori.text,
                   ),
                 ),
-                style: const TextStyle(
-                  color: Colors.white,
+                style: TextStyle(
+                  color: Colori.text,
                 ),
               ),
             ),
@@ -121,19 +122,19 @@ class HomePage extends StatelessWidget {
                                     Container(
                                       margin:
                                           const EdgeInsets.only(bottom: 3.0),
-                                      child: const Text(
+                                      child: Text(
                                         "Verifica di prova",
                                         style: TextStyle(
-                                            color: Colors.white,
+                                            color: Colori.text,
                                             fontWeight: FontWeight.bold),
                                       ),
                                     ),
                                     Container(
-                                        margin: EdgeInsets.only(right: 4),
-                                        child: const Text(
+                                        margin: const EdgeInsets.only(right: 4),
+                                        child: Text(
                                           "Mettiti alla prova",
                                           style: TextStyle(
-                                              color: Colors.white,
+                                              color: Colori.text,
                                               fontSize: 12.5),
                                         ))
                                   ]))
@@ -158,17 +159,19 @@ class HomePage extends StatelessWidget {
                                     Container(
                                       margin: const EdgeInsets.only(
                                           bottom: 3.0, right: 49.0),
-                                      child: const Text(
+                                      child: Text(
                                         "Aiuto temi",
                                         style: TextStyle(
-                                            color: Colors.white,
+                                            color: Colori.text,
                                             fontWeight: FontWeight.bold),
                                       ),
                                     ),
-                                    const Text(
+                                      Text(
                                       "Supporto alla scrittura",
                                       style: TextStyle(
-                                          color: Colors.white, fontSize: 12.5),
+                                          color: Colori.text,
+                                          fontSize: 12.5
+                                      ),
                                     )
                                   ]))
                             ])))
@@ -198,19 +201,19 @@ class HomePage extends StatelessWidget {
                                     Container(
                                       margin: const EdgeInsets.only(
                                           bottom: 3.0, right: 50.0),
-                                      child: const Text(
+                                      child: Text(
                                         "Materie",
                                         style: TextStyle(
-                                            color: Colors.white,
+                                            color: Colori.text,
                                             fontWeight: FontWeight.bold),
                                       ),
                                     ),
                                     Container(
-                                        margin: EdgeInsets.only(right: 4),
-                                        child: const Text(
+                                        margin: const EdgeInsets.only(right: 4),
+                                        child: Text(
                                           "Esplora i contenuti",
                                           style: TextStyle(
-                                              color: Colors.white,
+                                              color: Colori.text,
                                               fontSize: 12.5),
                                         ))
                                   ]))
@@ -236,19 +239,19 @@ class HomePage extends StatelessWidget {
                                     Container(
                                       margin: const EdgeInsets.only(
                                           bottom: 3.0, right: 5.0),
-                                      child: const Text(
+                                      child:Text(
                                         "Piano di studio",
                                         style: TextStyle(
-                                            color: Colors.white,
+                                            color: Colori.text,
                                             fontWeight: FontWeight.bold),
                                       ),
                                     ),
                                     Container(
-                                        margin: EdgeInsets.only(right: 6),
-                                        child: const Text(
+                                        margin: const EdgeInsets.only(right: 6),
+                                        child: Text(
                                           "Preparati con l'IA",
                                           style: TextStyle(
-                                              color: Colors.white,
+                                              color: Colori.text,
                                               fontSize: 12.5),
                                         ))
                                   ]))
@@ -271,21 +274,21 @@ class HomePage extends StatelessWidget {
                     child: Stack(children: [
                       Container(
                           margin: const EdgeInsets.only(left: 20.0, top: 17.0),
-                          child: const Row(
+                          child: Row(
                             children: [
-                              Icon(
+                              const Icon(
                                 Icons.history,
                                 color: Colors.white,
                               ),
                               Text(
                                 "  Torna sui tuoi passi ",
                                 style: TextStyle(
-                                  color: Colors.white,
+                                  color: Colori.text,
                                   fontSize: 15,
                                   fontWeight: FontWeight.w500,
                                 ),
                               ),
-                              Icon(
+                              const Icon(
                                 Icons.arrow_forward_ios,
                                 color: Colors.white,
                               )
@@ -321,15 +324,15 @@ class HomePage extends StatelessWidget {
                 child: Column(children: <Widget>[
                   Container(
                     margin: const EdgeInsets.only(top: 20, left: 20),
-                    child: const Row(children: <Widget>[
-                      Icon(Icons.people, color: Colors.white),
+                    child: Row(children: <Widget>[
+                      const Icon(Icons.people, color: Colors.white),
                       Text("  Chat di gruppo per te",
                           style: TextStyle(
-                            color: Colors.white,
+                            color: Colori.text,
                             fontWeight: FontWeight.w500,
                             fontSize: 15,
                           )),
-                      Icon(
+                      const Icon(
                         Icons.arrow_forward_ios,
                         color: Colors.white,
                       )
@@ -343,10 +346,10 @@ class HomePage extends StatelessWidget {
                       height: 50,
                       child: Image.asset("assets/Bosco.png"),
                     ),
-                    const Text(" I notturni 2.0 \n GRUPPO UFFICIALE",
+                     Text(" I notturni 2.0 \n GRUPPO UFFICIALE",
                         style: TextStyle(
-                          color: Colors.white,
-                        )),
+                          color: Colori.text,
+                      )),
                     Container(
                         height: 35.0,
                         decoration: BoxDecoration(
@@ -366,11 +369,11 @@ class HomePage extends StatelessWidget {
                       height: 50,
                       child: Image.asset("assets/PicGroups1.png"),
                     ),
-                    const Text(
-                        " LICEO SCIENTIFICO \n Ragazzi ho pensato che siam...",
-                        style: TextStyle(
-                          color: Colors.white,
-                        )),
+                     Text(
+                      " LICEO SCIENTIFICO \n Ragazzi ho pensato che siam...",
+                      style: TextStyle(
+                        color: Colori.text,
+                    )),
                     Container(
                         height: 35.0,
                         decoration: BoxDecoration(
@@ -390,11 +393,11 @@ class HomePage extends StatelessWidget {
                       height: 50,
                       child: Image.asset("assets/PicGroups2.png"),
                     ),
-                    const Text(
-                        " Studiamo Insieme \n Chiacchieriamo e studiamo...    ",
-                        style: TextStyle(
-                          color: Colors.white,
-                        )),
+                     Text(
+                      " Studiamo Insieme \n Chiacchieriamo e studiamo...    ",
+                      style: TextStyle(
+                        color: Colori.text,
+                      )),
                     Container(
                         height: 35.0,
                         decoration: BoxDecoration(
