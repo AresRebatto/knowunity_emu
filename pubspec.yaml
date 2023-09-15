@@ -71,6 +71,7 @@ flutter:
     - assets/appuntoUno.png
     - assets/appuntoDue.png
     - assets/appuntoTre.png
+    - assets/Bosco.png
 
 
   # An image asset can refer to one or more resolution-specific "variants", see

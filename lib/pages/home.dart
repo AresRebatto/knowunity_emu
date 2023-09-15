@@ -339,6 +339,7 @@ class HomePage extends StatelessWidget{
                                 style: TextStyle(
                                   color: Colors.white,
                                   fontSize: 15,
+                                  fontWeight: FontWeight.w500,
                                 ),
                               ),
                               Icon(
@@ -383,7 +384,53 @@ class HomePage extends StatelessWidget{
               decoration: BoxDecoration(
                 color: const Color(0xff272c30),
                 borderRadius: BorderRadius.circular(40),
-              ),)
+              ),
+              child: Column(
+                children: <Widget>[
+                  Container(
+                    margin: EdgeInsets.only(top: 20, left: 20),
+                    child: const Row(
+                      children: <Widget>[
+                        Icon(
+                          Icons.people,
+                          color: Colors.white
+                        ),
+                        Text(
+                          "  Chat di gruppo per te",
+                          style: TextStyle(
+                            color: Colors.white,
+                            fontWeight: FontWeight.w500,
+                            fontSize: 15,
+                          )
+                        ),
+                        Icon(
+                          Icons.arrow_forward_ios,
+                          color: Colors.white,
+                        )
+
+                      ]
+                    ),
+                  ),
+                  Row(
+                    children: <Widget>[
+                      Container(
+                        margin: EdgeInsets.only(left: 20, top: 20),
+                        height: 50,
+                        child: Image.asset("assets/Bosco.png"),
+                      ),
+                      Column(
+                        children: <Widget>[
+                          Text("wdf"),
+                          Text("wfer")
+                        ]
+                      ),
+                      TextButton(onPressed: (){}, child: Text("Unisciti"))
+                    ]
+                  ),
+
+                ]
+              )
+            ),
           ],
         ),
       ),
